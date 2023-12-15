@@ -57,10 +57,9 @@ app.post(
             num_outputs: parseInt(req.body.outputs || 1, 10),
             image: imageToDataURL(req.files['image'][0]),
             mask: imageToDataURL(req.files['mask'][0]),
-            /*
-            num_inference_steps: 25, // more steps better results, 0 - 500
+            num_inference_steps: 30, // more steps better results, 0 - 500
             guidance_scale: 7.5, // higher is less "random"
-            */
+
         };
 
         // attempt to start prediciton
@@ -73,7 +72,7 @@ app.post(
                 },
                 method: 'POST',
                 body: JSON.stringify({
-                    version: REPLICATE_INPAINT_MODEL,
+                    version: "e490d072a34a94a11e9711ed5a6ba621c3fab884eda1665d9d3a282d65a21180",
                     input,
                 }),
             }
