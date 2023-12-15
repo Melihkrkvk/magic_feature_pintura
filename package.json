@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "type": "module",
+    "name": "pintura-example-feature-retouch",
+    "version": "0.0.0",
+    "author": "Rik Schennink at PQINA",
+    "homepage": "https://pqina.nl/pintura/",
+    "license": "https://pqina.nl/pintura/license/",
+    "description": "A Pintura example project",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@pqina/pintura": "^8.68.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.17.1",
+        "form-data": "^4.0.0",
+        "multer": "^1.4.5-lts.1",
+        "node-fetch": "^3.3.2"
+    }
+}
